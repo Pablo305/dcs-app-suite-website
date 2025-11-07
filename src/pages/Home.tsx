@@ -214,6 +214,183 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* DCS App Suite Portfolio */}
+      <section className="py-20 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-800"></div>
+        <div className="relative max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <Zap className="w-16 h-16 text-blue-400 mx-auto mb-6" />
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 title">
+              DCS App Suite
+            </h2>
+            <p className="text-2xl subtitle mb-4">
+              Revolutionary AI-Powered Ecosystem
+            </p>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              $2.8M portfolio of enterprise-grade AI applications with 15+ AI providers integrated
+            </p>
+          </motion.div>
+
+          {/* Portfolio Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="glass p-6 text-center"
+            >
+              <div className="text-3xl font-bold gradient-text mb-2">$2.8M</div>
+              <div className="text-sm text-gray-400">Portfolio Value</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="glass p-6 text-center"
+            >
+              <div className="text-3xl font-bold gradient-text mb-2">7</div>
+              <div className="text-sm text-gray-400">Enterprise Apps</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="glass p-6 text-center"
+            >
+              <div className="text-3xl font-bold gradient-text mb-2">15+</div>
+              <div className="text-sm text-gray-400">AI Providers</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="glass p-6 text-center"
+            >
+              <div className="text-3xl font-bold gradient-text mb-2">85%</div>
+              <div className="text-sm text-gray-400">Avg Completion</div>
+            </motion.div>
+          </div>
+
+          {/* Key Applications Highlight */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="glass p-6"
+            >
+              <h3 className="text-lg font-bold text-white mb-2">KAAI Platform</h3>
+              <p className="text-sm text-gray-400 mb-3">Enterprise AI Content Optimization</p>
+              <div className="flex justify-between text-xs">
+                <span className="text-gray-500">90% Complete</span>
+                <span className="text-green-400">$850K Value</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="glass p-6"
+            >
+              <h3 className="text-lg font-bold text-white mb-2">CallMart Intelligence</h3>
+              <p className="text-sm text-gray-400 mb-3">Call Center AI with 95.3% Accuracy</p>
+              <div className="flex justify-between text-xs">
+                <span className="text-gray-500">85% Complete</span>
+                <span className="text-green-400">$720K Value</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="glass p-6"
+            >
+              <h3 className="text-lg font-bold text-white mb-2">ISP Analytics</h3>
+              <p className="text-sm text-gray-400 mb-3">AI ISP Platform - 50K+ ZIPs</p>
+              <div className="flex justify-between text-xs">
+                <span className="text-gray-500">90% Complete</span>
+                <span className="text-green-400">$650K Value</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="glass p-6"
+            >
+              <h3 className="text-lg font-bold text-white mb-2">EasyMovee Platform</h3>
+              <p className="text-sm text-gray-400 mb-3">AI Moving Platform with CRM</p>
+              <div className="flex justify-between text-xs">
+                <span className="text-gray-500">80% Complete</span>
+                <span className="text-green-400">$480K Value</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="glass p-6"
+            >
+              <h3 className="text-lg font-bold text-white mb-2">Dual Chat AI</h3>
+              <p className="text-sm text-gray-400 mb-3">Multi-Provider AI Orchestration</p>
+              <div className="flex justify-between text-xs">
+                <span className="text-gray-500">85% Complete</span>
+                <span className="text-green-400">$300K Value</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="glass p-6"
+            >
+              <h3 className="text-lg font-bold text-white mb-2">BPO Reconciliation</h3>
+              <p className="text-sm text-gray-400 mb-3">Enterprise Payroll - 100% Accuracy</p>
+              <div className="flex justify-between text-xs">
+                <span className="text-gray-500">100% Complete</span>
+                <span className="text-green-400">$250K Value</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="glass p-6 md:col-span-2 lg:col-span-1"
+            >
+              <h3 className="text-lg font-bold text-white mb-2">AI CMS/Project Manager</h3>
+              <p className="text-sm text-gray-400 mb-3">3D Project Management Platform</p>
+              <div className="flex justify-between text-xs">
+                <span className="text-gray-500">60% Complete</span>
+                <span className="text-blue-400">Innovation Project</span>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Value Proposition */}
       <section className="py-20 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-800"></div>

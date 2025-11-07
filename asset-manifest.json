@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dcs-app-suite-website/static/css/main.9315dbe2.css",
-    "main.js": "/dcs-app-suite-website/static/js/main.e2b00673.js",
+    "main.css": "/dcs-app-suite-website/static/css/main.ab74ba7a.css",
+    "main.js": "/dcs-app-suite-website/static/js/main.cd857a8c.js",
     "index.html": "/dcs-app-suite-website/index.html",
-    "main.9315dbe2.css.map": "/dcs-app-suite-website/static/css/main.9315dbe2.css.map",
-    "main.e2b00673.js.map": "/dcs-app-suite-website/static/js/main.e2b00673.js.map"
+    "main.ab74ba7a.css.map": "/dcs-app-suite-website/static/css/main.ab74ba7a.css.map",
+    "main.cd857a8c.js.map": "/dcs-app-suite-website/static/js/main.cd857a8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9315dbe2.css",
-    "static/js/main.e2b00673.js"
+    "static/css/main.ab74ba7a.css",
+    "static/js/main.cd857a8c.js"
   ]
 }
