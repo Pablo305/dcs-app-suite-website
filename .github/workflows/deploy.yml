@@ -1,4 +1,4 @@
-name: Deploy DCS App Suite to GitHub Pages
+name: Deploy FunneLeads to GitHub Pages
 
 on:
   push:
