@@ -25,26 +25,26 @@ const Home: React.FC = () => {
     {
       title: 'Proven Sales Performance',
       icon: TrendingUp,
-      description: '100-200 monthly conversions for internet services through our Clearlink partnership, demonstrating consistent sales execution.',
-      metrics: ['10-15% conversion rate', '1,000+ calls/month', 'Multi-provider expertise']
+      description: 'Clearlink partnership: 1,000-2,000 monthly calls generating 100-200 internet service sales. Texas Electricity Ratings: 4 dedicated full-time agents.',
+      metrics: ['Consistent conversions', 'Multi-channel operations', 'Growing partnerships']
     },
     {
       title: 'Scalable Infrastructure',
       icon: Users,
-      description: 'Remote call center with agents across the U.S. and South Africa. PCI-compliant systems ensure data security and reliability.',
-      metrics: ['24/7 coverage capability', 'Cloud-based telephony', 'Enterprise security']
+      description: 'Remote call center with agents across the U.S. and South Africa. Ytel cloud telephony, PlanPlus CRM integration, and PCI-compliant systems.',
+      metrics: ['Remote workforce', 'Enterprise systems', 'Secure & compliant']
     },
     {
-      title: 'Industry Partnerships',
+      title: 'Industry Experience & Network',
       icon: Shield,
-      description: 'Established relationships with major providers and master dealers including Allconnect, Ibex, P10, and RSI.',
-      metrics: ['Texas Electricity contract', 'Multiple ISP integrations', 'Energy sector expertise']
+      description: 'Decades of combined experience from Red Ventures. Established relationships with master dealers (Ibex, AllConnect, P10, RSI) and extensive dealer network.',
+      metrics: ['Red Ventures alumni', 'Master dealer access', 'Deep industry contacts']
     },
     {
-      title: 'AI-Powered Operations',
+      title: 'Platform & AI Integration',
       icon: Zap,
-      description: 'Advanced technology stack including automated order reconciliation, AI quality assurance, and real-time analytics.',
-      metrics: ['Order Recon system', 'AI-driven QA', 'Performance tracking']
+      description: 'Hands-on experience with platforms like Viasat, Metronet, Rise Broadband, HughesNet, BroadbandNow. AI-powered Order Recon, QA, and sales training.',
+      metrics: ['Platform expertise', 'AI-driven operations', 'Quality systems']
     }
   ];
 
@@ -107,23 +107,6 @@ const Home: React.FC = () => {
                   <div className="text-sm text-gray-400">{stat.label}</div>
                 </motion.div>
               ))}
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link
-                to="/overview"
-                className="btn-primary flex items-center space-x-3 group text-lg px-8 py-4"
-              >
-                <span>ServiceStation Synergy</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
-              <a 
-                href="#capabilities" 
-                className="btn-secondary flex items-center space-x-3 text-lg px-8 py-4"
-              >
-                <span>Our Capabilities</span>
-              </a>
             </div>
           </motion.div>
         </div>
@@ -244,36 +227,12 @@ const Home: React.FC = () => {
           >
             <DollarSign className="w-16 h-16 text-green-400 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Deploy, Day One
+              Operational & Proven
             </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              No hiring costs, no training period, no infrastructure buildout. 
-              Our proven sales force, established partnerships, and AI-powered systems 
-              are ready to start converting your leads immediately.
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Our sales infrastructure, established partnerships, and AI-powered systems
+              are actively generating results across multiple home service verticals.
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-              <div>
-                <div className="text-3xl font-bold gradient-text mb-2">$100K+</div>
-                <div className="text-gray-400">Monthly Revenue Generation</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold gradient-text-success mb-2">99.2%</div>
-                <div className="text-gray-400">System Uptime</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold gradient-text-warning mb-2">4 Weeks</div>
-                <div className="text-gray-400">Full Integration Timeline</div>
-              </div>
-            </div>
-
-            <Link
-              to="/overview"
-              className="btn-primary inline-flex items-center space-x-2 group"
-            >
-              <span>View ServiceStation Synergy Analysis</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
           </motion.div>
         </div>
       </section>

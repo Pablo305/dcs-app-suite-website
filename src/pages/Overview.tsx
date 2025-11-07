@@ -18,51 +18,51 @@ import {
 const Overview: React.FC = () => {
   const synergies = [
     {
-      title: 'Immediate Revenue Impact',
+      title: 'Active Revenue Operations',
       icon: DollarSign,
-      description: 'FunneLeads brings a proven sales force already generating $100K+ monthly revenue for similar platforms',
+      description: 'Currently generating 100-200 monthly sales for internet services via Clearlink (1,000-2,000 calls/month), plus dedicated energy team for Texas Electricity Ratings',
       benefits: [
-        '15 trained agents ready to convert ServiceStation leads',
-        'No hiring or training costs - revenue starts Week 1',
-        'Proven 10-15% conversion rate on qualified leads',
+        'Active call center operations with proven track record',
+        'Established infrastructure and systems already operational',
+        'Proven conversion success on qualified leads',
         'PCI-compliant infrastructure already operational'
       ],
       metrics: [
-        { label: 'Monthly Revenue', value: '$100K+' },
-        { label: 'Time to Deploy', value: '4 Weeks' },
-        { label: 'Conversion Rate', value: '10-15%' }
+        { label: 'Monthly Sales', value: '100-200' },
+        { label: 'Call Volume', value: '1-2K/mo' },
+        { label: 'Active Contracts', value: '2 Major' }
       ]
     },
     {
       title: 'Network Amplification',
       icon: Network,
-      description: 'Established provider relationships and master dealer partnerships expand ServiceStation\'s ecosystem immediately',
+      description: 'Extensive industry network from decades of experience, including direct provider relationships and master dealer partnerships',
       benefits: [
-        'Active partnerships: AT&T, Viasat, Metronet, Rise Broadband',
-        'Master dealer access: Ibex, Allconnect, P10, RSI',
-        'Texas Electricity Ratings contract for energy sector',
-        'Existing integrations with provider platforms'
+        'Piloted platforms: Sara Plus, Viasat, Metronet, Rise Broadband, HughesNet, BroadbandNow',
+        'Master dealer relationships: Ibex, AllConnect, P10, RSI',
+        'Red Ventures background (Pablo & George) brings deep industry connections',
+        'Active Texas Electricity Ratings contract with growing team'
       ],
       metrics: [
-        { label: 'Provider Partners', value: '25+' },
-        { label: 'Master Dealers', value: '4 Major' },
-        { label: 'Active Contracts', value: '$1.2M' }
+        { label: 'Platforms Piloted', value: '6+' },
+        { label: 'Master Dealers', value: '4+' },
+        { label: 'RV Alumni', value: 'Yes' }
       ]
     },
     {
-      title: 'Technology Integration',
+      title: 'Technology & Systems Integration',
       icon: Cpu,
-      description: 'AI-powered operations and proven systems enhance ServiceStation\'s platform capabilities',
+      description: 'Operational infrastructure with AI integration across order processing, quality assurance, and training',
       benefits: [
-        'Order Recon: Automated order verification system',
-        'AI Quality Assurance: Real-time call monitoring',
-        'Seamless CRM integration capabilities',
-        'Real-time analytics and performance tracking'
+        'Ytel cloud telephony system for reliable call handling',
+        'PlanPlus CRM with existing integration experience',
+        'Order Recon: AI-powered automated order verification',
+        'AI-driven QA and sales training for continuous improvement'
       ],
       metrics: [
-        { label: 'Order Accuracy', value: '99.2%' },
-        { label: 'System Uptime', value: '99.5%' },
-        { label: 'AI-Powered QA', value: 'Active' }
+        { label: 'Telephony', value: 'Ytel' },
+        { label: 'CRM', value: 'PlanPlus' },
+        { label: 'AI Systems', value: '3 Active' }
       ]
     }
   ];
@@ -76,56 +76,34 @@ const Overview: React.FC = () => {
 
   const valueProps = [
     {
-      title: 'Scalable Operations',
+      title: 'Operational Infrastructure',
       points: [
-        'Remote call center infrastructure already built',
-        'Proven ability to handle 1,000-2,000 calls monthly',
-        'Can scale up or down based on demand',
-        'All agents trained in multi-provider sales'
+        'Remote workforce across US and South Africa',
+        'Currently handling 1,000-2,000 calls monthly for Clearlink',
+        '4 dedicated agents for Texas Electricity Ratings',
+        'Ytel cloud telephony and PlanPlus CRM systems'
       ]
     },
     {
-      title: 'Industry Credibility',
+      title: 'Industry Experience & Credibility',
       points: [
-        'Leadership team from Red Ventures background',
-        'Trusted by major platforms like Clearlink',
-        'Long-term contract with Texas Electricity Ratings',
-        'Established relationships with key providers'
+        'Pablo & George: Red Ventures alumni with decades of experience',
+        'Helped pilot major platforms: Viasat, Metronet, Rise, HughesNet, BroadbandNow',
+        'Sales, customer service, and dealer-side expertise',
+        'Deep understanding of provider platforms and operations'
       ]
     },
     {
-      title: 'Technology Stack',
+      title: 'Technology & Compliance',
       points: [
-        'Cloud telephony via Ytel for reliability',
-        'PlanPlus CRM integration experience',
-        'PCI compliant for secure payment handling',
-        'AI-driven quality assurance and training'
+        'AI integration: Order Recon, QA, and sales training',
+        'PCI compliant for secure transaction handling',
+        'Master dealer relationships: Ibex, AllConnect, P10, RSI',
+        'Extensive network of dealer contacts throughout the industry'
       ]
     }
   ];
 
-  const timeline = [
-    {
-      week: 'Week 1',
-      title: 'Systems Integration',
-      tasks: ['CRM connection', 'Lead routing setup', 'Access provisioning', 'Security protocols']
-    },
-    {
-      week: 'Week 2',
-      title: 'Agent Onboarding',
-      tasks: ['ServiceStation training', 'Platform familiarization', 'Provider education', 'Quality standards']
-    },
-    {
-      week: 'Week 3',
-      title: 'Pilot Program',
-      tasks: ['Limited lead volume', 'Process refinement', 'Feedback loops', 'Performance tracking']
-    },
-    {
-      week: 'Week 4',
-      title: 'Full Deployment',
-      tasks: ['Complete lead access', 'Full team activation', 'Ongoing optimization', 'Revenue generation']
-    }
-  ];
 
   return (
     <div className="min-h-screen pt-20">
@@ -280,104 +258,6 @@ const Overview: React.FC = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Integration Timeline */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 title">
-              4-Week Integration Timeline
-            </h2>
-            <p className="text-xl subtitle">
-              From partnership to revenue generation
-            </p>
-          </motion.div>
-
-          <div className="space-y-6">
-            {timeline.map((phase, index) => (
-              <motion.div
-                key={phase.week}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="glass p-6"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <div className="text-sm font-semibold text-blue-400 mb-1">{phase.week}</div>
-                    <h3 className="text-xl font-bold text-white">{phase.title}</h3>
-                  </div>
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-                    {index + 1}
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  {phase.tasks.map((task, idx) => (
-                    <div key={idx} className="text-sm text-gray-300 flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0" />
-                      <span>{task}</span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-950">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="glass p-12"
-          >
-            <TrendingUp className="w-16 h-16 text-green-400 mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Strategic Partnership Opportunity
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              FunneLeads brings proven sales execution, established partnerships, and AI-powered 
-              operations ready to enhance ServiceStation's platform immediately.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-              <div>
-                <div className="text-3xl font-bold gradient-text mb-2">$100K+</div>
-                <div className="text-gray-400">Monthly Revenue</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold gradient-text-success mb-2">Zero</div>
-                <div className="text-gray-400">Hiring Costs</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold gradient-text-warning mb-2">4 Weeks</div>
-                <div className="text-gray-400">To Revenue</div>
-              </div>
-            </div>
-
-            <p className="text-lg text-gray-400 mb-8">
-              This is a first conversation to explore synergies and mutual benefits. 
-              Let's discuss how FunneLeads can accelerate ServiceStation's growth.
-            </p>
-
-            <button className="btn-primary inline-flex items-center space-x-2 group">
-              <span>Schedule Strategy Discussion</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
-          </motion.div>
         </div>
       </section>
     </div>
