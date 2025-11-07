@@ -1,64 +1,46 @@
-# DCS App Suite Website
+# FunneLeads LLC - Corporate Website
 
-Revolutionary AI-powered business solutions website showcasing a comprehensive portfolio of intelligent applications.
+Professional corporate website for FunneLeads LLC, showcasing sales capabilities and presenting the ServiceStation acquisition synergy opportunity.
 
-## Portfolio Overview
+## About FunneLeads
 
-- **Total Value**: $2.8M conservative estimate
-- **Applications**: 5 AI-powered solutions
-- **Active Users**: 9,500+ across all platforms
-- **Average Completion**: 86% production-ready
+Specialized sales and customer acquisition company focusing on home services (energy, internet, security, etc.). We partner with businesses to ensure every lead is contacted and converted efficiently.
 
-## Applications Featured
+## Key Capabilities
 
-### 1. KAAI Platform (90% Complete)
-- **Valuation**: $850K
-- **Users**: 2,500
-- **Launch**: 4 weeks
-- AI Content Intelligence with 9+ provider integration
+- **Monthly Sales Volume**: 100-200 conversions for internet services
+- **Call Volume**: 1,000+ calls handled monthly
+- **Conversion Rate**: 10-15% on qualified leads
+- **Experience**: 10+ years in telecom and utility sales
 
-### 2. CallMart Intelligence (85% Complete)
-- **Valuation**: $650K
-- **Users**: 1,200
-- **Launch**: 6 weeks
-- Advanced call center analytics with 95.3% accuracy
+## Strategic Partnerships
 
-### 3. ISP Analytics (90% Complete)
-- **Valuation**: $720K
-- **Users**: 3,100
-- **Launch**: 3 weeks
-- Comprehensive internet provider intelligence
-
-### 4. EasyMovee (80% Complete)
-- **Valuation**: $580K
-- **Users**: 850
-- **Launch**: 8 weeks
-- Intelligent moving services platform
-
-### 5. Dual Chat AI (85% Complete)
-- **Valuation**: $490K
-- **Users**: 1,800
-- **Launch**: 5 weeks
-- Multi-AI orchestration system
+- **Texas Electricity Ratings**: 4 full-time dedicated agents
+- **Clearlink**: 100-200 monthly sales for internet services
+- **Master Dealers**: Ibex, Allconnect, P10, RSI
+- **Providers**: AT&T, Viasat, Metronet, Rise Broadband, HughesNet
 
 ## Technology Stack
 
 - **Frontend**: React 18 + TypeScript
-- **Styling**: Tailwind CSS + Custom CSS
-- **Animations**: Framer Motion
+- **Styling**: Tailwind CSS + Custom CSS (Professional design system)
+- **Animations**: Framer Motion (minimal, purposeful animations)
 - **Icons**: Lucide React
 - **Routing**: React Router DOM v6
 - **Build Tool**: Create React App
 
-## Key Features
+## Design Principles
 
-- ✅ Responsive design optimized for all devices
-- ✅ Modern dark theme with gradient animations
-- ✅ Interactive animations and micro-interactions
-- ✅ Performance optimized with lazy loading
-- ✅ SEO optimized with meta tags
-- ✅ Accessibility compliant (WCAG 2.1)
-- ✅ Cross-browser compatibility
+This website follows enterprise UX/UI best practices:
+
+- ✅ Clean, professional design without visual clutter
+- ✅ Solid colors for text readability (no gradient text on body content)
+- ✅ Simplified color palette (8 core colors)
+- ✅ Benefit-focused content over technical jargon
+- ✅ Clear hierarchy and scannable layouts
+- ✅ Minimal animations (only on user interaction)
+- ✅ WCAG AA accessibility compliance
+- ✅ Mobile-first responsive design
 
 ## Getting Started
 
@@ -69,65 +51,64 @@ Revolutionary AI-powered business solutions website showcasing a comprehensive p
 ### Installation
 
 1. Clone the repository
-\`\`\`bash
-git clone https://github.com/dcs/app-suite-website.git
-cd app-suite-website
-\`\`\`
+```bash
+git clone https://github.com/funneleads/corporate-website.git
+cd corporate-website
+```
 
 2. Install dependencies
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Start development server
-\`\`\`bash
+```bash
 npm start
-\`\`\`
+```
 
 The application will open at `http://localhost:3000`
 
 ### Build for Production
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ## Project Structure
 
-\`\`\`
+```
 src/
 ├── components/          # Reusable UI components
 │   ├── Navbar.tsx      # Navigation component
 │   └── Footer.tsx      # Footer component
 ├── pages/              # Page components
 │   ├── Home.tsx        # Landing page
-│   ├── Overview.tsx    # Portfolio overview
-│   ├── KAAIPlatform.tsx
-│   ├── CallMartIntelligence.tsx
-│   ├── ISPAnalytics.tsx
-│   ├── EasyMovee.tsx
-│   └── DualChatAI.tsx
+│   └── Overview.tsx    # ServiceStation synergy page
 ├── App.tsx             # Main application component
-├── App.css             # Global styles and utilities
+├── App.css             # Professional design system
 └── index.tsx           # Application entry point
-\`\`\`
+```
 
-## Performance Optimizations
+## Key Pages
 
-- **Code Splitting**: React.lazy() for route-based splitting
-- **Image Optimization**: WebP format with fallbacks
-- **CSS Optimization**: Tailwind CSS purging
-- **Bundle Analysis**: Webpack bundle analyzer
-- **Caching**: Browser caching strategies
-- **Lazy Loading**: Intersection Observer API
+### Home Page
+- Company overview and value proposition
+- Key statistics and capabilities
+- Service coverage breakdown
+- Clear call-to-action for ServiceStation synergy
 
-## SEO Features
+### Overview Page
+- Detailed acquisition synergy analysis
+- Three pillars of value
+- Integration timeline (4 weeks)
+- Partnership opportunity details
 
-- Meta tags for social sharing
-- Structured data markup
-- Sitemap generation
-- Robots.txt configuration
-- Performance metrics tracking
+## Performance Features
+
+- Optimized bundle size through simplified design
+- Fast load times with minimal animations
+- Efficient component rendering
+- Mobile-optimized for all screen sizes
 
 ## Browser Support
 
@@ -136,26 +117,17 @@ src/
 - Safari 14+
 - Edge 90+
 
-## Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
 ## License
 
 This project is proprietary and confidential. All rights reserved.
 
 ## Contact
 
-For questions about this portfolio website or investment opportunities:
+For business inquiries and partnership opportunities:
 
-- Email: contact@dcs-suite.com
-- Website: https://dcs-app-suite.com
-- LinkedIn: https://linkedin.com/company/dcs-suite
+- Email: contact@funneleads.com
+- Website: https://funneleads.com
 
 ---
 
-© 2024 DCS App Suite. All rights reserved.
+© 2024 FunneLeads LLC. All rights reserved.

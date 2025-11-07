@@ -2,41 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* DCS App Suite - Retro-Futuristic Fantastic 4 Aesthetic */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+/* FunneLeads LLC - Professional Enterprise Design */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Fantastic 4 Inspired Color Palette */
-  --ff-blue: #1E3A8A;
-  --ff-blue-light: #3B82F6;
-  --ff-blue-glow: #60A5FA;
-  --ff-orange: #EA580C;
-  --ff-orange-light: #FB923C;
-  --ff-orange-glow: #FDBA74;
-  --ff-silver: #94A3B8;
-  --ff-silver-light: #CBD5E1;
-  --ff-silver-glow: #E2E8F0;
-  --ff-cosmic: #5B21B6;
-  --ff-cosmic-light: #8B5CF6;
-  --ff-cosmic-glow: #C4B5FD;
+  /* Simplified Brand Colors */
+  --brand-primary: #2563EB;
+  --brand-secondary: #7C3AED;
+  --brand-accent: #06B6D4;
   
-  /* Dark Future Grays */
-  --space-black: #0B0F19;
-  --space-darker: #111827;
-  --space-dark: #1F2937;
-  --space-medium: #374151;
-  --space-light: #6B7280;
+  /* Neutral Scale */
+  --gray-900: #111827;
+  --gray-800: #1F2937;
+  --gray-700: #374151;
+  --gray-600: #4B5563;
+  --gray-500: #6B7280;
+  --gray-400: #9CA3AF;
+  --gray-300: #D1D5DB;
+  --gray-200: #E5E7EB;
+  --gray-100: #F3F4F6;
+  --gray-50: #F9FAFB;
   
-  /* Energy Colors */
-  --energy-blue: #00D9FF;
-  --energy-purple: #8B5CF6;
-  --energy-green: #10B981;
-  --energy-orange: #FF6B35;
-  --energy-pink: #EC4899;
+  /* Semantic Colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
   
   /* Typography */
-  --font-future: 'Orbitron', 'Exo 2', 'Rajdhani', monospace;
-  --font-tech: 'Share Tech Mono', 'JetBrains Mono', monospace;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 * {
@@ -46,480 +39,171 @@
 }
 
 body {
-  font-family: var(--font-future);
-  background: var(--space-black);
-  color: var(--ff-silver-light);
+  font-family: var(--font-primary);
+  background: var(--gray-900);
+  color: var(--gray-100);
   overflow-x: hidden;
-  line-height: 1.6;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Retro-Futuristic Scrollbar */
+/* Professional Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
-  background: var(--space-darker);
+  background: var(--gray-900);
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--space-black);
+  background: var(--gray-800);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--energy-blue), var(--ff-cosmic-light));
+  background: var(--brand-primary);
   border-radius: 6px;
-  border: 2px solid var(--space-darker);
-  box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+  border: 2px solid var(--gray-800);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, var(--ff-blue-glow), var(--energy-blue));
-  box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+  background: var(--brand-secondary);
 }
 
-/* Retro-Futuristic Typography */
-.ff-title {
-  font-family: var(--font-future);
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, var(--ff-blue-glow), var(--energy-blue), var(--ff-cosmic-glow));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* Reduced drop shadow for better readability */
-  filter: drop-shadow(0 2px 4px rgba(96, 165, 250, 0.2));
+/* Professional Typography */
+.title {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: white;
 }
 
-.ff-subtitle {
-  font-family: var(--font-tech);
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  color: var(--ff-silver);
-  /* Removed text shadow for better readability */
+.subtitle {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--gray-300);
+  line-height: 1.8;
 }
 
-.ff-tech-text {
-  font-family: var(--font-tech);
-  color: var(--energy-blue);
-  /* Subtle text shadow for readability */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+.accent-text {
+  font-family: var(--font-primary);
+  color: var(--brand-accent);
+  font-weight: 600;
 }
 
-/* Gradient Text Utilities */
+/* Accent Text Utilities - Solid colors for readability */
 .gradient-text {
-  background: linear-gradient(135deg, var(--ff-blue-glow), var(--energy-blue), var(--ff-cosmic-glow));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* Minimal drop shadow */
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  color: var(--brand-primary);
+  font-weight: 700;
 }
 
 .gradient-text-success {
-  background: linear-gradient(135deg, var(--energy-green), var(--energy-blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* Minimal drop shadow */
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  color: var(--success);
+  font-weight: 700;
 }
 
 .gradient-text-warning {
-  background: linear-gradient(135deg, var(--energy-orange), var(--ff-orange-glow));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* Minimal drop shadow */
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  color: var(--warning);
+  font-weight: 700;
 }
 
-/* Retro-Futuristic Glass Morphism */
+/* Professional Card Style */
 .glass {
-  background: rgba(31, 41, 55, 0.8);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(96, 165, 250, 0.2);
-  border-radius: 20px;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: rgba(31, 41, 55, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .glass:hover {
-  transform: translateY(-5px);
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(96, 165, 250, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-color: rgba(96, 165, 250, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(37, 99, 235, 0.3);
 }
 
-/* Neon glow effects */
-.neon-blue {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+/* Minimal animations - only on user interaction */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
 }
 
-.neon-blue-hover:hover {
-  box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
-}
-
-.neon-accent {
-  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
-}
-
-.neon-accent-hover:hover {
-  box-shadow: 0 0 40px rgba(6, 182, 212, 0.6);
-}
-
-/* Animation utilities */
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes pulse-glow {
-  0% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
-  100% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.6); }
-}
-
-/* Grid pattern background */
-.grid-pattern {
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 50px 50px;
-}
-
-/* Progress bar animations */
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.progress-shimmer::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-  animation: shimmer 2s infinite;
-}
-
-/* Card hover effects */
-.card-hover {
-  transition: all 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-}
-
-/* Text animations */
-.text-reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: textReveal 0.8s ease-out forwards;
-}
-
-@keyframes textReveal {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Button styles */
+/* Subtle background pattern */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Professional Button Styles */
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--brand-primary);
   color: white;
   border: none;
-  padding: 12px 32px;
-  border-radius: 12px;
+  padding: 14px 32px;
+  border-radius: 8px;
   font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  font-size: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  cursor: pointer;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-}
-
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 12px 32px;
-  border-radius: 12px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(59, 130, 246, 0.5);
-  transform: translateY(-2px);
-}
-
-/* Loading animations */
-.loading-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-/* ===== RETRO-FUTURISTIC FANTASTIC 4 ENHANCEMENTS ===== */
-
-/* Holographic Buttons */
-.ff-btn-primary {
-  background: linear-gradient(135deg, var(--ff-blue), var(--ff-blue-light));
-  border: 2px solid var(--energy-blue);
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  font-family: var(--font-future);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ff-btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.ff-btn-primary:hover::before {
-  left: 100%;
-}
-
-.ff-btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 
-    0 10px 25px rgba(0, 217, 255, 0.3),
-    0 0 30px rgba(0, 217, 255, 0.2);
-  border-color: var(--energy-blue);
-}
-
-.ff-btn-secondary {
-  background: transparent;
-  border: 2px solid var(--ff-cosmic-light);
-  color: var(--ff-cosmic-light);
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  font-family: var(--font-future);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ff-btn-secondary:hover {
-  background: rgba(139, 92, 246, 0.1);
-  transform: translateY(-2px);
-  box-shadow: 
-    0 10px 25px rgba(139, 92, 246, 0.2),
-    0 0 30px rgba(139, 92, 246, 0.1);
-  color: var(--ff-cosmic-glow);
-}
-
-/* Energy Circuit Lines */
-.ff-circuit {
-  position: relative;
-  overflow: hidden;
-}
-
-.ff-circuit::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    linear-gradient(90deg, transparent 0%, rgba(0, 217, 255, 0.3) 50%, transparent 100%),
-    linear-gradient(0deg, transparent 0%, rgba(139, 92, 246, 0.3) 50%, transparent 100%);
-  background-size: 200px 2px, 2px 200px;
-  background-position: -200px 50%, 50% -200px;
-  animation: circuit-flow 3s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes circuit-flow {
-  0% { 
-    background-position: -200px 50%, 50% -200px;
-  }
-  100% { 
-    background-position: calc(100% + 200px) 50%, 50% calc(100% + 200px);
-  }
-}
-
-/* Hexagonal Grid Pattern */
-.ff-hex-pattern {
-  background-image: 
-    linear-gradient(30deg, rgba(96, 165, 250, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(96, 165, 250, 0.1) 87.5%, rgba(96, 165, 250, 0.1)),
-    linear-gradient(150deg, rgba(96, 165, 250, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(96, 165, 250, 0.1) 87.5%, rgba(96, 165, 250, 0.1)),
-    linear-gradient(30deg, rgba(96, 165, 250, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(96, 165, 250, 0.1) 87.5%, rgba(96, 165, 250, 0.1)),
-    linear-gradient(150deg, rgba(96, 165, 250, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(96, 165, 250, 0.1) 87.5%, rgba(96, 165, 250, 0.1));
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px;
-  animation: hex-drift 30s linear infinite;
-}
-
-@keyframes hex-drift {
-  0% { background-position: 0 0, 0 0, 40px 70px, 40px 70px; }
-  100% { background-position: 80px 140px, 80px 140px, 120px 210px, 120px 210px; }
-}
-
-/* Holographic Text Effects - Improved Readability */
-.ff-hologram {
-  background: linear-gradient(45deg, var(--energy-blue), var(--ff-cosmic-light), var(--energy-green));
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* Reduced animation speed and removed drop shadow */
-  animation: hologram-shift 8s ease-in-out infinite;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
-}
-
-@keyframes hologram-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-/* Particle System */
-.ff-particles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.ff-particle {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: var(--energy-blue);
-  border-radius: 50%;
-  box-shadow: 0 0 6px var(--energy-blue);
-  animation: particle-float 8s linear infinite;
-}
-
-@keyframes particle-float {
-  0% {
-    opacity: 0;
-    transform: translateY(100vh) translateX(0);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100px) translateX(100px);
-  }
-}
-
-/* Retro Button Overrides */
-.btn-primary {
-  background: linear-gradient(135deg, var(--ff-blue), var(--ff-blue-light));
-  border: 2px solid var(--energy-blue);
-  color: white;
-  padding: 12px 32px;
-  border-radius: 12px;
-  font-family: var(--font-future);
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 217, 255, 0.4);
+  background: #1D4ED8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
 }
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid var(--ff-cosmic-light);
-  color: var(--ff-cosmic-light);
+  color: white;
+  border: 2px solid var(--brand-primary);
   padding: 12px 32px;
-  border-radius: 12px;
-  font-family: var(--font-future);
+  border-radius: 8px;
   font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  font-size: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .btn-secondary:hover {
-  background: rgba(139, 92, 246, 0.1);
-  border-color: var(--ff-cosmic-glow);
-  color: var(--ff-cosmic-glow);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.2);
+  background: rgba(37, 99, 235, 0.1);
+  border-color: #60A5FA;
+  transform: translateY(-1px);
 }
 
-/* App Background Override */
+/* App Background */
 .App {
-  background: linear-gradient(135deg, var(--space-black) 0%, var(--space-darker) 50%, var(--space-black) 100%);
+  background: var(--gray-900);
   min-height: 100vh;
   position: relative;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .ff-title {
-    font-size: 3rem;
+  .title {
+    font-size: 2.5rem;
   }
   
   .glass {
     margin: 1rem;
+    padding: 24px;
   }
   
-  .ff-btn-primary,
-  .ff-btn-secondary,
   .btn-primary,
   .btn-secondary {
     width: 100%;
