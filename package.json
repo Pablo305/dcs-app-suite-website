@@ -2,7 +2,7 @@
   "name": "dcs-website",
   "version": "1.0.0",
   "description": "DCS App Suite - Revolutionary AI-Powered Business Solutions Website",
-  "homepage": "https://pablo305.github.io/",
+  "homepage": "https://pablo305.github.io/dcs-app-suite-website",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
