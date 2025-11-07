@@ -12,7 +12,7 @@ import Overview from './pages/Overview.tsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/dcs-app-suite-website">
       <div className="App min-h-screen text-white">
         <Navbar />
         <Routes>
