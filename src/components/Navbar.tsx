@@ -16,9 +16,8 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'ServiceStation Synergy', path: '/overview' },
+  const navLinks: { name: string; path: string }[] = [
+    // Single page presentation - no navigation needed
   ];
 
   const isActive = (path: string) => location.pathname === path;

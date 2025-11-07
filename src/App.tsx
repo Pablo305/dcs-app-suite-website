@@ -8,7 +8,6 @@ import Footer from './components/Footer.tsx';
 
 // Pages
 import Home from './pages/Home.tsx';
-import Overview from './pages/Overview.tsx';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/overview" element={<Overview />} />
         </Routes>
         <Footer />
       </div>
