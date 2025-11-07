@@ -16,7 +16,7 @@ import {
 const Home: React.FC = () => {
   const stats = [
     { label: 'Monthly Sales', value: '100-200', icon: Target },
-    { label: 'Calls Handled', value: '1,000+', icon: Phone },
+    { label: 'Calls Handled', value: '3,000', icon: Phone },
     { label: 'Conversion Rate', value: '10-15%', icon: TrendingUp },
     { label: 'Years Experience', value: '10+', icon: Shield },
   ];
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
     {
       title: 'Proven Sales Performance',
       icon: TrendingUp,
-      description: 'Clearlink partnership: 1,000-2,000 monthly calls generating 100-200 internet service sales. Texas Electricity Ratings: 4 dedicated full-time agents.',
+      description: 'Clearlink partnership: 3,000 monthly calls generating 100-200 internet service sales. Texas Electricity Ratings: 4 dedicated full-time agents.',
       metrics: ['Consistent conversions', 'Multi-channel operations', 'Growing partnerships']
     },
     {
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
     {
       service: 'Internet Services',
       providers: 'AT&T, Viasat, Metronet, Rise Broadband, HughesNet',
-      volume: '1,000-2,000 calls/month'
+      volume: '3,000 calls/month'
     },
     {
       service: 'Energy Services',

@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dcs-app-suite-website/static/css/main.9315dbe2.css",
-    "main.js": "/dcs-app-suite-website/static/js/main.96551e42.js",
+    "main.js": "/dcs-app-suite-website/static/js/main.e2b00673.js",
     "index.html": "/dcs-app-suite-website/index.html",
     "main.9315dbe2.css.map": "/dcs-app-suite-website/static/css/main.9315dbe2.css.map",
-    "main.96551e42.js.map": "/dcs-app-suite-website/static/js/main.96551e42.js.map"
+    "main.e2b00673.js.map": "/dcs-app-suite-website/static/js/main.e2b00673.js.map"
   },
   "entrypoints": [
     "static/css/main.9315dbe2.css",
-    "static/js/main.96551e42.js"
+    "static/js/main.e2b00673.js"
   ]
 }

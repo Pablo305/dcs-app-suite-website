@@ -20,7 +20,7 @@ const Overview: React.FC = () => {
     {
       title: 'Active Revenue Operations',
       icon: DollarSign,
-      description: 'Currently generating 100-200 monthly sales for internet services via Clearlink (1,000-2,000 calls/month), plus dedicated energy team for Texas Electricity Ratings',
+      description: 'Currently generating 100-200 monthly sales for internet services via Clearlink (3,000 calls/month), plus dedicated energy team for Texas Electricity Ratings',
       benefits: [
         'Active call center operations with proven track record',
         'Established infrastructure and systems already operational',
@@ -29,7 +29,7 @@ const Overview: React.FC = () => {
       ],
       metrics: [
         { label: 'Monthly Sales', value: '100-200' },
-        { label: 'Call Volume', value: '1-2K/mo' },
+        { label: 'Call Volume', value: '3K/mo' },
         { label: 'Active Contracts', value: '2 Major' }
       ]
     },
@@ -69,7 +69,7 @@ const Overview: React.FC = () => {
 
   const keyNumbers = [
     { label: 'Monthly Sales Volume', value: '100-200', description: 'Consistent conversions for internet services', icon: Target },
-    { label: 'Active Call Volume', value: '1,000+', description: 'Calls handled monthly through partnerships', icon: Phone },
+    { label: 'Active Call Volume', value: '3,000', description: 'Calls handled monthly through partnerships', icon: Phone },
     { label: 'Geographic Coverage', value: 'US + SA', description: 'Remote agents across multiple regions', icon: Globe },
     { label: 'Years of Experience', value: '10+', description: 'Industry veterans from Red Ventures', icon: Shield }
   ];
@@ -79,7 +79,7 @@ const Overview: React.FC = () => {
       title: 'Operational Infrastructure',
       points: [
         'Remote workforce across US and South Africa',
-        'Currently handling 1,000-2,000 calls monthly for Clearlink',
+        'Currently handling 3,000 calls monthly for Clearlink',
         '4 dedicated agents for Texas Electricity Ratings',
         'Ytel cloud telephony and PlanPlus CRM systems'
       ]
